@@ -1,0 +1,2453 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1018.1932                               -->
+<workbook source-build='2018.3.0 (20183.18.1018.1932)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='sampleciti (sakila)' inline='true' name='federated.0h4x5iq1kgljpg14seqdx17qmbxy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.0kmnujx16xj42b1efxtkn1sojch2'>
+            <connection class='mysql' dbname='sakila' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation connection='mysql.0kmnujx16xj42b1efxtkn1sojch2' name='sampleciti' table='[sampleciti]' type='table'>
+          <columns>
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss|#|#|MM/dd/yyyy HH:mm:ss|#|#|yyyy-MM-dd HH:mm:ss.SSSS' name='starttime' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tripduration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tripduration]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>tripduration</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>starttime</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[starttime]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>starttime</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stoptime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stoptime]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>stoptime</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>65535</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_LONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[start station id]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>start station id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>startstationname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[startstationname]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>startstationname</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>65535</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_LONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>startstationlatitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[startstationlatitude]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>startstationlatitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>startstationlongitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[startstationlongitude]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>startstationlongitude</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>endstationid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[endstationid]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>endstationid</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>endstationame</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[endstationame]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>endstationame</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>65535</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_LONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>endstationlatitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[endstationlatitude]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>endstationlatitude</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>endstationlongitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[endstationlongitude]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>endstationlongitude</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bikeid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bikeid]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>bikeid</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>usertype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[usertype]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>usertype</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>65535</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_LONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birthyear</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[birthyear]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>birthyear</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>65535</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_LONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Seasons</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Seasons]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>Seasons</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>65535</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_LONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>65535</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_LONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Generation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Generation]</local-name>
+            <parent-name>[sampleciti]</parent-name>
+            <remote-alias>Generation</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>65535</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_LONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Tripduration (minutes)' datatype='real' name='[Calculation_1244963875041136640]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[tripduration]/60' />
+      </column>
+      <column caption='COUNT([Gender])/COUNT([Number of Records])' datatype='real' name='[Calculation_64739297745530894]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([gender])/COUNT([Number of Records])' />
+      </column>
+      <column datatype='string' name='[Generation]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Seasons]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='Tripduration (minutes) (bin)' datatype='integer' name='[Tripduration (minutes) (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Calculation_1244963875041136640]' peg='0' size='5' />
+      </column>
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+      <column caption='Birthyear' datatype='string' name='[birthyear]' role='dimension' type='nominal' />
+      <column caption='Endstationame' datatype='string' name='[endstationame]' role='dimension' type='nominal' />
+      <column caption='Endstationid' datatype='integer' name='[endstationid]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Endstationlatitude' datatype='real' name='[endstationlatitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Endstationlongitude' datatype='real' name='[endstationlongitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Sum' caption='Gender' datatype='integer' name='[gender]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='Female' />
+          <alias key='1' value='Male' />
+          <alias key='2' value='Unknown' />
+        </aliases>
+      </column>
+      <column caption='Index' datatype='integer' hidden='true' name='[index]' role='measure' type='quantitative' />
+      <column caption='Start Station Id' datatype='integer' name='[start station id]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Startstationlatitude' datatype='real' name='[startstationlatitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Startstationlongitude' datatype='real' name='[startstationlongitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Startstationname' datatype='string' name='[startstationname]' role='dimension' type='nominal' />
+      <column caption='Starttime' datatype='datetime' datatype-customized='true' name='[starttime]' role='dimension' type='quantitative' />
+      <column caption='Stoptime' datatype='string' name='[stoptime]' role='dimension' type='nominal' />
+      <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+      <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+      <column-instance column='[Generation]' derivation='Attribute' name='[attr:Generation:nk]' pivot='key' type='nominal' />
+      <column-instance column='[starttime]' derivation='Hour' name='[hr:starttime:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Generation]' derivation='None' name='[none:Generation:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Seasons]' derivation='None' name='[none:Seasons:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Number of Records]' derivation='Attribute' name='[pcto:attr:Number of Records:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' pcttotal-options='IncludePages' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Avg' name='[pcto:avg:Number of Records:qk:11]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' pcttotal-options='IncludePages' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Avg' name='[pcto:avg:Number of Records:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Count' name='[pcto:cnt:Number of Records:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Median' name='[pcto:med:Number of Records:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:10]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[hr:starttime:ok]' ordering-type='Field' pcttotal-options='IncludePages' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:12]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' pcttotal-options='IncludePages' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[hr:starttime:ok]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:5]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:6]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Field' type='PctTotal'>
+          <order field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[hr:starttime:ok]' />
+          <order field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[gender]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:7]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Field' type='PctTotal'>
+          <order field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[hr:starttime:ok]' />
+          <order field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[gender]' />
+          <order field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[Generation]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:8]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Field' pcttotal-options='IncludePages' type='PctTotal'>
+          <order field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[hr:starttime:ok]' />
+          <order field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[gender]' />
+          <order field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[Generation]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:9]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Field' pcttotal-options='IncludePages' type='PctTotal'>
+          <order field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[hr:starttime:ok]' />
+          <order field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[Generation]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Avg' name='[win:avg:Number of Records:qk:4]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='0' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[win:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='0' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/vasqu/OneDrive/Documents/My Tableau Repository/Datasources/sampleciti (sakila).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='04/28/2019 05:22:45 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss|#|#|MM/dd/yyyy HH:mm:ss|#|#|yyyy-MM-dd HH:mm:ss.SSSS' name='starttime' />
+            </columns>
+          </relation>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='6152969' timestamp-start='2019-04-28 17:22:45.167' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>tripduration</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tripduration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tripduration</remote-alias>
+              <ordinal>0</ordinal>
+              <family>sampleciti</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10751</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>starttime</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[starttime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>starttime</remote-alias>
+              <ordinal>1</ordinal>
+              <family>sampleciti</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stoptime</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stoptime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stoptime</remote-alias>
+              <ordinal>2</ordinal>
+              <family>sampleciti</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6077545</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[start station id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station id</remote-alias>
+              <ordinal>3</ordinal>
+              <family>sampleciti</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1261</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>startstationname</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[startstationname]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>startstationname</remote-alias>
+              <ordinal>4</ordinal>
+              <family>sampleciti</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1379</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>startstationlatitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[startstationlatitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>startstationlatitude</remote-alias>
+              <ordinal>5</ordinal>
+              <family>sampleciti</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1371</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>startstationlongitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[startstationlongitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>startstationlongitude</remote-alias>
+              <ordinal>6</ordinal>
+              <family>sampleciti</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1371</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>endstationid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[endstationid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>endstationid</remote-alias>
+              <ordinal>7</ordinal>
+              <family>sampleciti</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1278</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>endstationame</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[endstationame]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>endstationame</remote-alias>
+              <ordinal>8</ordinal>
+              <family>sampleciti</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1417</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>endstationlatitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[endstationlatitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>endstationlatitude</remote-alias>
+              <ordinal>9</ordinal>
+              <family>sampleciti</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1451</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>endstationlongitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[endstationlongitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>endstationlongitude</remote-alias>
+              <ordinal>10</ordinal>
+              <family>sampleciti</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1451</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bikeid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[bikeid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bikeid</remote-alias>
+              <ordinal>11</ordinal>
+              <family>sampleciti</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>77608</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>usertype</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[usertype]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>usertype</remote-alias>
+              <ordinal>12</ordinal>
+              <family>sampleciti</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>birthyear</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[birthyear]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>birthyear</remote-alias>
+              <ordinal>13</ordinal>
+              <family>sampleciti</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>115</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>14</ordinal>
+              <family>sampleciti</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Seasons</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Seasons]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Seasons</remote-alias>
+              <ordinal>15</ordinal>
+              <family>sampleciti</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>16</ordinal>
+              <family>sampleciti</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>17</ordinal>
+              <family>sampleciti</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Generation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Generation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Generation</remote-alias>
+              <ordinal>18</ordinal>
+              <family>sampleciti</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.513854' measure-ordering='alphabetic' measure-percentage='0.486146' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Year:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2018</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2015</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:Generation:nk]' type='palette'>
+            <map to='#9e3a26'>
+              <bucket>&quot;Silent Generation&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;N/A&quot;</bucket>
+            </map>
+            <map to='#de5d1f'>
+              <bucket>&quot;Baby Boomer&quot;</bucket>
+            </map>
+            <map to='#f49538'>
+              <bucket>&quot;Gen X&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;Millenials&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Seasons:nk]' type='palette'>
+            <map to='#59acbe'>
+              <bucket>&quot;winter&quot;</bucket>
+            </map>
+            <map to='#a3bd5a'>
+              <bucket>&quot;spring&quot;</bucket>
+            </map>
+            <map to='#ce8451'>
+              <bucket>&quot;autumn&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;summer&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Generation:nk]' type='palette'>
+            <map to='#9e3a26'>
+              <bucket>&quot;Silent Generation&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;N/A&quot;</bucket>
+            </map>
+            <map to='#de5d1f'>
+              <bucket>&quot;Baby Boomer&quot;</bucket>
+            </map>
+            <map to='#f49538'>
+              <bucket>&quot;Gen X&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;Millenials&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:avg:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:cnt:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:med:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:3]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:5]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk]:1&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:attr:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:avg:Number of Records:qk:11]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:1]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:10]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:12]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:2]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:6]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:7]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:8]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:9]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[usr:Calculation_64739297763368981:qk:1]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[usr:Calculation_64739297763545110:qk:1]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[usr:Calculation_64739297764474903:qk:1]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[win:avg:Number of Records:qk:4]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[win:sum:Number of Records:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='tripduration' />
+        <field-sort-custom-order field='Calculation_1244963875041136640' />
+        <field-sort-custom-order field='starttime' />
+        <field-sort-custom-order field='Calculation_1244963875058114561' />
+        <field-sort-custom-order field='stoptime' />
+        <field-sort-custom-order field='start station id' />
+        <field-sort-custom-order field='startstationname' />
+        <field-sort-custom-order field='startstationlatitude' />
+        <field-sort-custom-order field='startstationlongitude' />
+        <field-sort-custom-order field='endstationid' />
+        <field-sort-custom-order field='endstationame' />
+        <field-sort-custom-order field='endstationlatitude' />
+        <field-sort-custom-order field='endstationlongitude' />
+        <field-sort-custom-order field='bikeid' />
+        <field-sort-custom-order field='usertype' />
+        <field-sort-custom-order field='birthyear' />
+        <field-sort-custom-order field='gender' />
+        <field-sort-custom-order field='Seasons' />
+        <field-sort-custom-order field='Month' />
+        <field-sort-custom-order field='Year' />
+        <field-sort-custom-order field='Generation' />
+      </field-sort-info>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='% Difference Number of Rides  Year Over Year - 2014-2018'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sampleciti (sakila)' name='federated.0h4x5iq1kgljpg14seqdx17qmbxy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4x5iq1kgljpg14seqdx17qmbxy'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcdf:sum:Number of Records:qk:4]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='ColumnInPane' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#f28e2bcb' />
+            <format attr='background-color' id='refline0' value='#f5f5f57f' />
+            <format attr='color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <reference-line axis-column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcdf:sum:Number of Records:qk:4]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-table' value-column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcdf:sum:Number of Records:qk:4]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:ok]</rows>
+        <cols>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcdf:sum:Number of Records:qk:4]</cols>
+        <percentages enabled='true' mode='column-in-pane' />
+      </table>
+    </worksheet>
+    <worksheet name='Gender Split Season'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sampleciti (sakila)' name='federated.0h4x5iq1kgljpg14seqdx17qmbxy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4x5iq1kgljpg14seqdx17qmbxy'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[Seasons]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Gender' datatype='integer' name='[gender]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='Female' />
+                <alias key='1' value='Male' />
+                <alias key='2' value='Unknown' />
+              </aliases>
+            </column>
+            <column-instance column='[Seasons]' derivation='None' name='[none:Seasons:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:11]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='ColumnInPane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:11]' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]' value='97' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Seasons:nk]' value='#1b1b1b' />
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:11]' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5f5f5' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:11]' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]</rows>
+        <cols>([federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Seasons:nk] * [federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:11])</cols>
+        <percentages enabled='true' mode='column-in-pane' />
+      </table>
+    </worksheet>
+    <worksheet name='Gender Split Total'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Gender Split Total 2014-2018</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sampleciti (sakila)' name='federated.0h4x5iq1kgljpg14seqdx17qmbxy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4x5iq1kgljpg14seqdx17qmbxy'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column aggregation='Sum' caption='Gender' datatype='integer' name='[gender]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='Female' />
+                <alias key='1' value='Male' />
+                <alias key='2' value='Unknown' />
+              </aliases>
+            </column>
+            <column-instance column='[gender]' derivation='None' name='[none:gender:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:13]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='683' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#666666' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5f5f5' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#f5f5f5' />
+            <format attr='border-style' value='solid' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:13]' />
+              <text column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]' />
+              <color column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]</field>
+                  <field>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:13]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>0.66604837437016173</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+    </worksheet>
+    <worksheet name='Gender Split Yearly'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sampleciti (sakila)' name='federated.0h4x5iq1kgljpg14seqdx17qmbxy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4x5iq1kgljpg14seqdx17qmbxy'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column aggregation='Sum' caption='Gender' datatype='integer' name='[gender]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='Female' />
+                <alias key='1' value='Male' />
+                <alias key='2' value='Unknown' />
+              </aliases>
+            </column>
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:13]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:13]' field-type='quantitative' max='1.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:ok]' value='39' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:ok]' value='40' />
+            <format attr='height-header' value='19' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:ok]' value='#000000' />
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:13]' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5f5f5' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:ok]</rows>
+        <cols>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:13]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Generation Split Yearly'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sampleciti (sakila)' name='federated.0h4x5iq1kgljpg14seqdx17qmbxy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4x5iq1kgljpg14seqdx17qmbxy'>
+            <column datatype='string' name='[Generation]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column aggregation='Sum' caption='Gender' datatype='integer' name='[gender]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='Female' />
+                <alias key='1' value='Male' />
+                <alias key='2' value='Unknown' />
+              </aliases>
+            </column>
+            <column-instance column='[Generation]' derivation='None' name='[none:Generation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Table' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>%all%</bucket>
+              <bucket>2014</bucket>
+              <bucket>2015</bucket>
+              <bucket>2016</bucket>
+              <bucket>2017</bucket>
+              <bucket>2018</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]'>
+            <groupfilter from='0' function='range' level='[none:gender:ok]' to='2' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:ok]' value='23' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='subtotal' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:ok]' value='#000000' />
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk]' value='#000000' />
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000f4' />
+            <format attr='background-color' id='refline0' value='#1b1b1b6d' />
+            <format attr='color' id='refline0' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk] / [federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:ok])</rows>
+        <cols>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk]</cols>
+        <percentages enabled='true' mode='table' />
+      </table>
+    </worksheet>
+    <worksheet name='Generational Split Total'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sampleciti (sakila)' name='federated.0h4x5iq1kgljpg14seqdx17qmbxy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4x5iq1kgljpg14seqdx17qmbxy'>
+            <column datatype='string' name='[Generation]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Generation]' derivation='None' name='[none:Generation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Table' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Millenials&quot;</bucket>
+              <bucket>&quot;Gen X&quot;</bucket>
+              <bucket>&quot;Baby Boomer&quot;</bucket>
+              <bucket>&quot;Silent Generation&quot;</bucket>
+              <bucket>&quot;N/A&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]' value='#000000' />
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#f5f5f5' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#d4d4d4' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]</rows>
+        <cols>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk]</cols>
+        <percentages enabled='true' mode='table' />
+      </table>
+    </worksheet>
+    <worksheet name='Hourly Demand Curve by Demographic'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sampleciti (sakila)' name='federated.0h4x5iq1kgljpg14seqdx17qmbxy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4x5iq1kgljpg14seqdx17qmbxy'>
+            <column datatype='string' name='[Generation]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column aggregation='Sum' caption='Gender' datatype='integer' name='[gender]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='Female' />
+                <alias key='1' value='Male' />
+                <alias key='2' value='Unknown' />
+              </aliases>
+            </column>
+            <column-instance column='[starttime]' derivation='Hour' name='[hr:starttime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Generation]' derivation='None' name='[none:Generation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Table' type='PctTotal' />
+            </column-instance>
+            <column caption='Starttime' datatype='datetime' datatype-customized='true' name='[starttime]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#1b1b1b' />
+            <format attr='width' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[hr:starttime:ok]' value='52' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='subtotal' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[hr:starttime:ok]' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk]' value='#000000' />
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[hr:starttime:ok]' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' data-class='subtotal' value='solid' />
+            <format attr='border-color' data-class='subtotal' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk]</rows>
+        <cols>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[hr:starttime:ok]</cols>
+        <pages>
+          <column>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]</column>
+          <column>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]</column>
+        </pages>
+        <percentages enabled='true' mode='table' />
+      </table>
+    </worksheet>
+    <worksheet name='PerDiffGenerationalSplt'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>% Difference Change Generational Split from Previous Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sampleciti (sakila)' name='federated.0h4x5iq1kgljpg14seqdx17qmbxy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4x5iq1kgljpg14seqdx17qmbxy'>
+            <column datatype='string' name='[Generation]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Generation]' derivation='None' name='[none:Generation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcdf:sum:Number of Records:qk:3]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:ok]' ordering-type='Field' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>%all%</bucket>
+              <bucket>2014</bucket>
+              <bucket>2015</bucket>
+              <bucket>2016</bucket>
+              <bucket>2017</bucket>
+              <bucket>2018</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:ok]' value='#000000' />
+            <format attr='font-weight' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:ok]' value='bold' />
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcdf:sum:Number of Records:qk:3]' value='#000000' />
+            <format attr='font-weight' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcdf:sum:Number of Records:qk:3]' value='normal' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:ok]</rows>
+        <cols>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcdf:sum:Number of Records:qk:3]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Total Number Rides'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sampleciti (sakila)' name='federated.0h4x5iq1kgljpg14seqdx17qmbxy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4x5iq1kgljpg14seqdx17qmbxy'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Count' name='[cnt:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='stroke-color' id='refline1' value='#f28e2bb9' />
+            <format attr='background-color' id='refline1' value='#f5f5f581' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <reference-line axis-column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[cnt:Number of Records:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-table' value-column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[cnt:Number of Records:qk]' z-order='1' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='297' />
+                <format attr='maxwidth' value='297' />
+                <format attr='minheight' value='100' />
+                <format attr='maxheight' value='100' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:ok]</rows>
+        <cols>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[cnt:Number of Records:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Total Number of Rides by Season'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sampleciti (sakila)' name='federated.0h4x5iq1kgljpg14seqdx17qmbxy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4x5iq1kgljpg14seqdx17qmbxy'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[Seasons]' role='dimension' type='nominal' />
+            <column-instance column='[Seasons]' derivation='None' name='[none:Seasons:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Seasons:nk]' direction='ASC' using='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[sum:Number of Records:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Seasons:nk]' value='187' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Seasons:nk]' value='#000000' />
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[sum:Number of Records:qk]' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='stroke-color' id='refline1' value='#f28e2bb9' />
+            <format attr='background-color' id='refline1' value='#f5f5f581' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='right' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Seasons:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[sum:Number of Records:qk]</rows>
+        <cols>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Seasons:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Trip Duration'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Trip Duration Frequency Share-Total</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sampleciti (sakila)' name='federated.0h4x5iq1kgljpg14seqdx17qmbxy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4x5iq1kgljpg14seqdx17qmbxy'>
+            <column caption='Tripduration (minutes)' datatype='real' name='[Calculation_1244963875041136640]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[tripduration]/60' />
+            </column>
+            <column aggregation='None' caption='Tripduration (minutes) (bin)' datatype='integer' name='[Tripduration (minutes) (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Calculation_1244963875041136640]' peg='0' size='5' />
+            </column>
+            <column-instance column='[Tripduration (minutes) (bin)]' derivation='None' name='[none:Tripduration (minutes) (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1244963875041136640]' derivation='Sum' name='[pcto:sum:Calculation_1244963875041136640:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Table' type='PctTotal' />
+            </column-instance>
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Calculation_1244963875041136640:qk]</rows>
+        <cols>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Tripduration (minutes) (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[Tripduration (minutes) (bin)]</column>
+        </show-full-range>
+        <percentages enabled='true' mode='table' />
+      </table>
+    </worksheet>
+    <worksheet name='Trip Duration-Gender_Generation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sampleciti (sakila)' name='federated.0h4x5iq1kgljpg14seqdx17qmbxy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4x5iq1kgljpg14seqdx17qmbxy'>
+            <column caption='Tripduration (minutes)' datatype='real' name='[Calculation_1244963875041136640]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[tripduration]/60' />
+            </column>
+            <column datatype='string' name='[Generation]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Tripduration (minutes) (bin)' datatype='integer' name='[Tripduration (minutes) (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Calculation_1244963875041136640]' peg='0' size='5' />
+            </column>
+            <column aggregation='Sum' caption='Gender' datatype='integer' name='[gender]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='Female' />
+                <alias key='1' value='Male' />
+                <alias key='2' value='Unknown' />
+              </aliases>
+            </column>
+            <column-instance column='[Generation]' derivation='None' name='[none:Generation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Tripduration (minutes) (bin)]' derivation='None' name='[none:Tripduration (minutes) (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1244963875041136640]' derivation='Sum' name='[pcto:sum:Calculation_1244963875041136640:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Table' type='PctTotal' />
+            </column-instance>
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='color' data-class='subtotal' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Tripduration (minutes) (bin):ok]' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Tripduration (minutes) (bin):ok]' value='#000000' />
+            <format attr='color' field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Calculation_1244963875041136640:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Calculation_1244963875041136640:qk]</rows>
+        <cols>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Tripduration (minutes) (bin):ok]</cols>
+        <pages>
+          <column>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]</column>
+          <column>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]</column>
+        </pages>
+        <show-full-range>
+          <column>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[Tripduration (minutes) (bin)]</column>
+        </show-full-range>
+        <percentages enabled='true' mode='table' />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='31875' id='1' name='Total Number Rides' w='38800' x='1400' y='750' />
+        <zone h='31500' id='2' name='% Difference Number of Rides  Year Over Year - 2014-2018' w='59100' x='40600' y='375' />
+        <zone h='65500' id='3' name='Total Number of Rides by Season' w='98800' x='700' y='29375' />
+        <zone h='5875' id='4' leg-item-layout='grid' name='Total Number of Rides by Season' pane-specification-id='0' param='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Seasons:nk]' type='color' w='49000' x='4600' y='35000' />
+      </zones>
+    </dashboard>
+    <dashboard name='Dashboard 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='44500' id='1' name='Gender Split Total' w='45300' x='700' y='2125' />
+        <zone h='44500' id='3' name='Gender Split Yearly' w='53300' x='46600' y='2000' />
+        <zone h='50875' id='4' name='Gender Split Season' w='98900' x='500' y='47125' />
+      </zones>
+    </dashboard>
+    <dashboard name='Dashboard 4'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='33250' id='1' name='Generational Split Total' w='41200' x='300' y='9375' />
+        <zone h='6500' id='2' leg-item-layout='horz' name='Generational Split Total' pane-specification-id='0' param='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]' type='color' w='61400' x='16000' y='1500' />
+        <zone h='32750' id='3' name='PerDiffGenerationalSplt' w='41300' x='700' y='44250' />
+        <zone h='85625' id='4' name='Generation Split Yearly' w='55800' x='43200' y='12625' />
+      </zones>
+    </dashboard>
+    <dashboard name='Dashboard 5'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='54500' id='1' name='Trip Duration' w='98900' x='300' y='250' />
+        <zone h='44000' id='2' name='Trip Duration-Gender_Generation' w='99100' x='400' y='55500' />
+        <zone h='4500' id='3' name='Trip Duration-Gender_Generation' playctrls='0' slider='0' synchronized='1' trailctrls='0' type='currpage' w='32100' x='67100' y='55625' />
+      </zones>
+    </dashboard>
+    <dashboard name='Dashboard 6'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='91500' id='1' name='Hourly Demand Curve by Demographic' w='98400' x='600' y='7125' />
+        <zone h='6625' id='3' name='Hourly Demand Curve by Demographic' playctrls='0' slider='0' synchronized='1' trailctrls='0' type='currpage' w='29600' x='70000' y='875' />
+      </zones>
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>CitiBike Analysis 2014-2018</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f5f5f5' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='7' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Number of Rides by Year and Season' captured-sheet='Dashboard 2' id='1' />
+                  <story-point caption='Ridership Gender Analysis' captured-sheet='Dashboard 3' id='3'>
+                    <capturedDeltas>
+                      <worksheet name='Gender Split Season'>
+                        <selection-collection />
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Ridership Generational Analysis' captured-sheet='Dashboard 4' id='4'>
+                    <capturedDeltas>
+                      <worksheet name='Generation Split Yearly'>
+                        <selection-collection />
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Trip Duration Frequency by Total, Gender and Generation' captured-sheet='Dashboard 5' id='5' />
+                  <story-point caption='Hourly Demand Curve' captured-sheet='Dashboard 6' id='7'>
+                    <capturedDeltas>
+                      <worksheet name='Hourly Demand Curve by Demographic'>
+                        <current-page>
+                          <multibucket>
+                            <bucket>0</bucket>
+                            <bucket>&quot;Gen X&quot;</bucket>
+                          </multibucket>
+                        </current-page>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{5CF63538-DA2D-4431-A095-1B8578FE7339}' />
+    </window>
+    <window class='worksheet' hidden='true' name='% Difference Number of Rides  Year Over Year - 2014-2018'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{ACAB356D-2DD0-438C-83A1-818A6A024A8D}' />
+    </window>
+    <window class='dashboard' hidden='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='% Difference Number of Rides  Year Over Year - 2014-2018' />
+        <viewpoint name='Total Number Rides' />
+        <viewpoint name='Total Number of Rides by Season'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Seasons:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{405C2FC9-A1D7-466F-9279-6D03AD040A0E}' />
+    </window>
+    <window class='dashboard' hidden='true' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Gender Split Season'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <node-selection select-tuples='false'>
+              <oriented-node-reference orientation='horizontal'>
+                <node-reference>
+                  <fields>
+                    <field>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Seasons:nk]</field>
+                  </fields>
+                  <multibucket>
+                    <bucket>&quot;winter&quot;</bucket>
+                  </multibucket>
+                  <axis>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[pcto:sum:Number of Records:qk:11]</axis>
+                </node-reference>
+                <page-reference />
+              </oriented-node-reference>
+            </node-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Gender Split Total'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Gender Split Yearly'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0F142D24-76C5-4CE1-8B0D-799A09086092}' />
+    </window>
+    <window class='dashboard' hidden='true' name='Dashboard 4'>
+      <viewpoints>
+        <viewpoint name='Generation Split Yearly' />
+        <viewpoint name='Generational Split Total'>
+          <highlight field='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='PerDiffGenerationalSplt' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{85381DC0-B9E2-4299-8827-AD3C29106D29}' />
+    </window>
+    <window class='dashboard' hidden='true' name='Dashboard 5'>
+      <viewpoints>
+        <viewpoint name='Trip Duration'>
+          <zoom type='fit-height' />
+        </viewpoint>
+        <viewpoint name='Trip Duration-Gender_Generation'>
+          <current-page>
+            <multibucket>
+              <bucket>1</bucket>
+              <bucket>&quot;Gen X&quot;</bucket>
+            </multibucket>
+          </current-page>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{AF33ED2B-A351-480A-8A16-0F2B493021FD}' />
+    </window>
+    <window class='dashboard' hidden='true' name='Dashboard 6'>
+      <viewpoints>
+        <viewpoint name='Hourly Demand Curve by Demographic'>
+          <current-page>
+            <multibucket>
+              <bucket>0</bucket>
+              <bucket>&quot;N/A&quot;</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{84F9C48D-5E40-4B21-8413-F477870275D2}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Gender Split Season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{38A1653B-5526-4667-834E-276FD4391AE0}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Gender Split Total'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{A2CD36A1-1325-41F6-8632-795CF254F767}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Gender Split Yearly'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:gender:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{9B470016-BBBB-4CD0-B0CF-072ADE9696A1}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Generation Split Yearly'>
+      <cards>
+        <edge name='left'>
+          <strip size='161'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{8A62C27F-5B32-4991-9374-7DCEF657CE12}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Generational Split Total'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{77811289-5824-45BB-BBA4-3657695F8A08}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Hourly Demand Curve by Demographic'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card type='currpage' />
+            <card pane-specification-id='1' param='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>0</bucket>
+            <bucket>&quot;N/A&quot;</bucket>
+          </multibucket>
+        </current-page>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{326339B7-DA92-4E68-8BB9-C828C7855A52}' />
+    </window>
+    <window class='worksheet' hidden='true' name='PerDiffGenerationalSplt'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Generation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{3D95FE74-695D-49EC-8B9D-8CC09F8F896F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Number Rides'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{9A426110-3721-4CFB-9B5D-DEAEDD057DFD}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Number of Rides by Season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Seasons:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Seasons:nk]</field>
+            <field>[federated.0h4x5iq1kgljpg14seqdx17qmbxy].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{25E0914D-A37B-47BE-974F-5BBBB08064C8}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Trip Duration'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{101AB3AF-4E76-41CC-B8D2-008B67AACDF0}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Trip Duration-Gender_Generation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>1</bucket>
+            <bucket>&quot;Gen X&quot;</bucket>
+          </multibucket>
+        </current-page>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{58F40DA4-7D10-45B0-BBE3-535ED61024AE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Story 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
